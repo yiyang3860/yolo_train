@@ -1,0 +1,9 @@
+classes= 3
+
+train  = /home/ubuntu/yolo_train/fruit2/cfg/train.txt
+
+valid  = /home/ubuntu/yolo_train/fruit2/cfg/test.txt
+
+names = /home/ubuntu/yolo_train/fruit2/cfg/obj.names
+
+backup = /home/ubuntu/yolo_train/fruit2/cfg/weight

@@ -1,0 +1,9 @@
+classes= 2
+
+train  = cfg.orange/train.txt
+
+valid  = cfg.orange/test.txt
+
+names = /home/digits/jupyter/chtseng/opencv-cascade-make/yolo-v3/cfg.orange/obj.names
+
+backup = cfg.orange/weights/
