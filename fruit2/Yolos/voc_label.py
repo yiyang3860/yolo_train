@@ -43,8 +43,13 @@ def convert_annotation(image_id):
 
 wd = getcwd()
 
-for i in range(303):
-    image_ids = open('/home/ubuntu/yolo_train/fruit2/cfg/test.txt').readline().strip().split("/")
-    convert_annotation(image_ids[-1][:-4])
-
-
+with open('/home/ubuntu/yolo_train/fruit2/cfg/test.txt', 'r', encoding='utf-8') as f:
+    for i in range(303):
+        s = f.readline()
+        if "jpg" not in s:
+            print(s)
+            break
+        else:
+            image_ids = s.strip().split("/")
+            print(image_ids[-1][:-4])
+            convert_annotation(image_ids[-1][:-4])  
